@@ -8,6 +8,9 @@ il permet l'appel de methode sur machine distante
   import java.rmi.registry.\*;
 - le client cherche l'objet dans le registary puis utilise ces methodes.
 
+- un stub : une representation local de l'objet que le client vas utilisé .
+- RMI envoie l'appel par le reseaux pour l'executer sur le serveur et renvoyer le resultat.
+
 import java.rmi.\*
 
 public interface Hello extends Remote {
@@ -51,3 +54,11 @@ Hello stub = {Hello} Naming.lookup("rmi://localhost/Hello");
 System.out.println(stub.sayHello("Samir"));
 }
 }
+
+## SOAP
+
+(simple object access protocol) est un protocole d'echange de message en XML , generalement envoyer en http POST , le client : envoie une envelope XML qui dit quel operation appeler et avec quel parametres , le serveur : repond par une envelope XML.
+
+### WSDL
+
+(Web Services Description Language) est un fichier XML qui décrit le service : les opérations disponibles, leurs paramètres, leurs types de retour et l’adresse du service. C’est l’équivalent de l’interface Hello en RMI. Un outil comme SoapUI lit le WSDL et génère automatiquement les requêtes. Avec Spyne, il est généré tout seul à l’adresse http://localhost:8000/?wsdl
