@@ -85,8 +85,9 @@ c'est un moyenne d'appeler les fonction d'un programe par le web, les données c
 flask est une bibliotheque python qui permet ceci ,en resumé , tu cree ta fonction normalement, tu ajoute la toute et la methode et flask ecoute le reseau et appel la bonne fonction selon la requet qui arrive .
 
 - installer flask
+- installer postman pour les test (eventuelement on peut utiliser curl)
 
-lancer avec : python app.py
+- lancer avec : python app.py
 
 #### teste de la fonction get_students :
 
@@ -113,3 +114,10 @@ elle prend en paramettre l'id de l'etudiant recuperé de l'url de la requete + d
 methode (verbe) : PUT
 route : '/students/<int:id>'
 ![alt text](image-3.png)
+
+#### test de la fonction delete_student:
+
+elle prend en paramettre l'id de l'etudiant
+methode (verbe) : DELETE
+route : '/students/<int:id>'
+![alt text](image.png)
