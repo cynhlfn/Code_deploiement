@@ -76,9 +76,40 @@ Interopérabilité : different languages communique entre eux (ici client php po
 
 ## REST
 
-permet l'interoperabilité , utilise json et pas xml comment
+### API REST :
+
+c'est un moyenne d'appeler les fonction d'un programe par le web, les données circule en json contrairement a SOAP ou elle circule en XML, il permet de ce fait l'interoperabilité , chaque données peut etre acceder/alterer grace a une address (une route ) + une methode (GET, PUT, PUSH, DELETE ...).
+
+### Flask :
+
+flask est une bibliotheque python qui permet ceci ,en resumé , tu cree ta fonction normalement, tu ajoute la toute et la methode et flask ecoute le reseau et appel la bonne fonction selon la requet qui arrive .
 
 - installer flask
 
 lancer avec : python app.py
-![alt text](image.png)
+
+#### teste de la fonction get_students :
+
+methode (verbe) : GET
+route : '/students'
+![alt text](image-0.png)
+
+#### teste de la fonction add student :
+
+methode (verbe) : POST
+route : '/students'
+![alt text](image-1.png)
+
+#### teste de la fonction get_student :
+
+elle prend en paramettre l'id de l'etudiant recuperé de l'url de la requete .
+methode (verbe) : GET
+route : '/students/<int:id>'
+![alt text](image-2.png)
+
+#### teste de la fonction update_student :
+
+elle prend en paramettre l'id de l'etudiant recuperé de l'url de la requete + dans le corp de la requete les information a update .
+methode (verbe) : PUT
+route : '/students/<int:id>'
+![alt text](image-3.png)
