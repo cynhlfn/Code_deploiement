@@ -80,7 +80,9 @@ Interopérabilité : different languages communique entre eux (ici client php po
 
 c'est un moyenne d'appeler les fonction d'un programe par le web, les données circule en json contrairement a SOAP ou elle circule en XML, il permet de ce fait l'interoperabilité , chaque données peut etre acceder/alterer grace a une address (une route ) + une methode (GET, PUT, PUSH, DELETE ...).
 
-### Flask :
+### BACKEND
+
+#### Flask :
 
 flask est une bibliotheque python qui permet ceci ,en resumé , tu cree ta fonction normalement, tu ajoute la toute et la methode et flask ecoute le reseau et appel la bonne fonction selon la requet qui arrive .
 
@@ -121,3 +123,27 @@ elle prend en paramettre l'id de l'etudiant
 methode (verbe) : DELETE
 route : '/students/<int:id>'
 ![alt text](image.png)
+
+### FRONTEND
+
+#### php :
+
+#### test du code php :
+
+accee au backend a traver un front en php
+
+lancer le front avec la commande : php -S localhost:8888
+
+##### test1.php
+
+![alt text](image-4.png)
+
+##### test2.php
+
+- affichage direct au format tableau
+  ![alt text](image-5.png)
+
+##### test3.php
+
+- affichage sous format liste
+  ![alt text](image-6.png)
