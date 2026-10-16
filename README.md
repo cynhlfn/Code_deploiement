@@ -1,3 +1,5 @@
+# 12/10/2026
+
 ## RMI
 
 rmi = (Remote method invocation)
@@ -55,6 +57,8 @@ System.out.println(stub.sayHello("Samir"));
 }
 }
 
+# 15/10/2026
+
 ## SOAP
 
 (simple object access protocol) est un protocole d'echange de message en XML , generalement envoyer en http POST , le client : envoie une envelope XML qui dit quel operation appeler et avec quel parametres , le serveur : repond par une envelope XML.
@@ -73,6 +77,8 @@ Interopérabilité : different languages communique entre eux (ici client php po
 
 - installer php
 - dans php.ini, enlever le point virgule au debut de le ligne (;ex... = "soap")
+
+# 16/10/2026
 
 ## REST
 
@@ -136,7 +142,8 @@ lancer le front avec la commande : php -S localhost:8888
 
 ##### test1.php
 
-![alt text](image-4.png)
+- affichage au format json brute
+  ![alt text](image-4.png)
 
 ##### test2.php
 
@@ -147,3 +154,15 @@ lancer le front avec la commande : php -S localhost:8888
 
 - affichage sous format liste
   ![alt text](image-6.png)
+
+##### test4.php
+
+separer la logique metier des configuration
+![alt text](image-7.png)
+
+##### test5.php
+
+separer les services de la couche presentation
+![alt text](image-8.png)
+
+- Ces deux derniere manipulation son conciderer comme des bonne pratique qui permete un code plus propre et comprehensif et la modification plus simple a effectuer .
