@@ -166,3 +166,8 @@ separer les services de la couche presentation
 ![alt text](image-8.png)
 
 - Ces deux derniere manipulation son conciderer comme des bonne pratique qui permete un code plus propre et comprehensif et la modification plus simple a effectuer .
+
+###### test6.php
+
+pour separer les controleur de la vue on vas definir un nouveau repo nomé views
+![alt text](image-9.png)
