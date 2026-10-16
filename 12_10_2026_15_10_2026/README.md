@@ -62,3 +62,23 @@ System.out.println(stub.sayHello("Samir"));
 ### WSDL
 
 (Web Services Description Language) est un fichier XML qui décrit le service : les opérations disponibles, leurs paramètres, leurs types de retour et l’adresse du service. C’est l’équivalent de l’interface Hello en RMI. Un outil comme SoapUI lit le WSDL et génère automatiquement les requêtes. Avec Spyne, il est généré tout seul à l’adresse http://localhost:8000/?wsdl
+
+### exemple soap
+
+// j'expliquerais tout ici apres le cours
+
+### frontend
+
+Interopérabilité : different languages communique entre eux (ici client php pour backend python ) , grace au service SOAP
+
+- installer php
+- dans php.ini, enlever le point virgule au debut de le ligne (;ex... = "soap")
+
+## REST
+
+permet l'interoperabilité , utilise json et pas xml comment
+
+- installer flask
+
+lancer avec : python app.py
+![alt text](image.png)
